@@ -25,7 +25,7 @@ A feature-rich mobile todo list application built with React Native and TypeScri
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ultraflytodolist.git
+git clone https://github.com/Dhinesh4668/react-native-task-ultrafly.git
 cd ultraflytodolist
 ```
 
