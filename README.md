@@ -1,79 +1,113 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# UltraFly Todo List
 
-# Getting Started
+A feature-rich mobile todo list application built with React Native and TypeScript.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- ✨ Create and manage todos
+- 🎨 Colorful todo items
+- 📱 Modern mobile-first UI
+- 🔄 Navigation between screens
+- 💾 Todo persistence
+- 🔐 User authentication
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Getting Started
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### Prerequisites
 
+- Node.js (v14 or higher)
+- npm or yarn
+- React Native development environment setup
+  - For iOS: Xcode (Mac only)
+  - For Android: Android Studio
+
+### Installation
+
+1. Clone the repository:
 ```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+git clone https://github.com/yourusername/ultraflytodolist.git
+cd ultraflytodolist
 ```
 
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
+2. Install dependencies:
 ```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
+npm install
+# or
+yarn install
 ```
 
-### For iOS
-
+3. Install iOS dependencies (Mac only):
 ```bash
-# using npm
+cd ios
+pod install
+cd ..
+```
+
+### Running the App
+
+#### iOS
+```bash
 npm run ios
-
-# OR using Yarn
+# or
 yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+#### Android
+```bash
+npm run android
+# or
+yarn android
+```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## Project Structure
 
-## Step 3: Modifying your App
+```
+ultraflytodolist/
+├── app/
+│   ├── CreateScreen/     # Todo creation screen
+│   ├── LoginScreen/      # User authentication
+│   ├── ProfileScreen/    # User profile
+│   ├── screens/          # Main screens
+│   ├── SplashScreen/    # App launch screen
+│   └── navigation/      # Navigation configuration
+├── ios/                 # iOS native code
+└── android/            # Android native code
+```
 
-Now that you have successfully run the app, let's modify it.
+## Scripts
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+- `npm start` - Start the Metro bundler
+- `npm run android` - Run the Android app
+- `npm run ios` - Run the iOS app
+- `npm run lint` - Run ESLint
+- `npm test` - Run tests
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## Tech Stack
 
-## Congratulations! :tada:
+- React Native
+- TypeScript
+- React Navigation
+- ESLint
+- Jest for testing
 
-You've successfully run and modified your React Native App. :partying_face:
+## Development
 
-### Now what?
+The app follows a screen-based architecture with the following main components:
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+- `HomeScreen`: Displays the list of todos
+- `CreateScreen`: Handles todo creation with title, description, and color
+- `LoginScreen`: Manages user authentication
+- `ProfileScreen`: Shows user profile information
+- `SplashScreen`: Initial loading screen
 
-# Troubleshooting
+## Contributing
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-# Learn More
+## License
 
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project is licensed under the MIT License - see the LICENSE file for details.
